@@ -1,0 +1,275 @@
+/* 1200px / 16px = 75em */
+@media (max-width: 75em) {
+    html {
+      font-size: 85%;
+    }
+  }
+  
+  /* 980px / 16px = 61.25em */
+  @media (max-width: 61.25em) {
+    html {
+      font-size: 70%;
+    }
+  }
+  
+  /* 460px / 16px = 28.75em */
+  @media (max-width: 28.75em) {
+    html {
+      font-size: 50%;
+    }
+  }
+
+  /* 1200px / 16px = 75em */
+@media (max-width: 75em) {
+    .profile-picture {
+        flex: 0 0 auto;
+    }
+  }
+
+    /* 1200px / 16px = 75em */
+@media (max-width: 75em) {
+    .profile-picture {
+        flex: 0 0 auto;
+    }
+  }
+
+   /* 980px / 16px = 61.25em */
+   @media (max-width: 61.25em) {
+    .contacts-header {
+        font-size: 1.5rem;
+    }
+  }
+  
+
+
+:root {
+    --nav-bar: linear-gradient(27deg, #5e2f26, #f55959);
+    --nav-bar-link: #f0e2d6;
+    
+    --section: linear-gradient(87deg, #25201f, #353030);
+    --section-h5: #f55959;
+    --section-mixes: linear-gradient(90deg, #161618 0%, #353438 25%, #353438 75%, #161618 100%);
+}
+
+html {
+    scroll-behavior: smooth;
+    
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #f3ddc0;
+    font-family: 'Goldman', cursive;
+    font-size: 2rem;
+}
+
+
+/* NAVIGATION START*/
+
+#navbar {
+    display: flex;
+    justify-content: flex-end;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: var(--nav-bar);
+}
+
+ul {
+    list-style: none;
+    padding: 2rem 2rem;
+}
+
+.nav-menu {
+    display: flex;
+    margin-right: 3rem;
+}
+
+.nav-menu a {
+    padding: 2rem 2rem;
+    font-size: 2.5rem;
+    color: var(--nav-bar-link);
+    text-decoration: none;
+}
+
+.nav-menu a:hover {
+    color: #332f2c;
+}
+
+
+
+/* NAVIGATION END*/
+
+/* INTRO START*/
+
+#welcome-section {
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+width: 100%;
+height: 100vh;
+background: var(--section);
+}
+
+#welcome-section h1 {
+    font-size: 5rem;
+    color: #eed4b2;
+    text-align: center;
+    margin: 0 auto;
+    
+}
+
+.dj-color {
+    color: #f55959;
+}
+
+#welcome-section h5 {
+    font-size: 2.5rem;
+    font-weight: 100;
+    color: var(--section-h5);
+    font-style: italic;
+    text-align: center;
+}
+
+#welcome-section img {
+    width: 25rem;
+    border-radius: 50%;
+    margin-bottom: 1.8rem;
+    
+}
+
+/* INTRO END*/
+
+/* PROJECT SECTION START*/
+
+#projects {
+    text-align: center;
+    padding: 3rem 4rem;
+    background: var(--section-mixes);
+}
+
+#projects h2 {
+margin-bottom: 3rem;   
+color: #eed4b2;
+font-size: 4rem;
+font-weight: 100;
+
+}
+
+.projects-grid {
+    display: grid;
+    width: 100%;
+    grid-template-columns: repeat(auto-fit, minmax(380px, 1fr));
+    margin: 0 auto;
+    column-gap: 3rem;
+    justify-content: center;
+    
+}
+
+.mixes-cover {
+object-fit: cover;
+width: 28rem;
+border: 4px solid #eed4b2;
+border-radius: 50%;
+transition: transform 0.7s ease-out;
+}
+
+.mixes-cover:hover {
+    border: 4px solid #f55959;
+    transform: translateY(10px);
+    
+}
+
+.project-tile {
+    text-decoration: none;
+    color: #eed4b2;
+}
+
+.project-tile:hover {
+    color: #f55959;
+}
+
+/* PROJECT SECTION END*/
+
+/* CONTACT START*/
+
+#contact {
+    background: var(--section);
+    text-align: center;
+}
+
+
+.contacts-info {
+    display: flex;
+    width: 100%;
+    max-width: 960px;
+    justify-content: space-evenly;
+    align-items: center;
+    margin: 1rem auto;
+    padding-top: 1rem;
+    
+}
+
+.contacts-info i {
+    margin-right: 0.5rem;
+    color: #f55959;
+}
+
+#contact h2 {
+    max-width: 50%;
+    font-weight: 100;
+    padding-top: 5rem;
+    margin: 0 auto;
+    color: #eed4b2;
+    border-bottom: #f55959 solid 0.25rem;
+}
+
+#profile-link {
+    color:#eed4b2;
+    text-decoration: none;
+}
+
+/* CONTACT END*/
+
+/* FOOTER START*/
+
+footer {
+    display: flex;
+    width: 100%;
+    max-width: 75%;
+    margin: 5rem auto 0;
+    justify-content: space-between;
+}
+
+footer p {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 1.2rem;
+    color: #eed4b2;
+    font-style: italic;
+}
+
+footer i {
+    margin-right: 0.5rem;
+    color: #f55959;
+}
+
+.footer-element-1 {
+flex-shrink: 1;
+}
+
+.footer-element-2 {
+    flex-basis: 20em;
+}
+
+.disclaimer {
+    color: #f55959;
+}
+
+/* FOOTER END*/
